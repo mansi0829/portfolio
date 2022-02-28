@@ -1,9 +1,10 @@
 import React from "react";
+import Theme from "../components/theme";
 
 const index = () => {
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center">
-      <h1 className="text-4xl p-8">Heloo</h1>
+    <div>
+      <Theme />
     </div>
   );
 };
