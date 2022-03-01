@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import moon from "../../static/moon.png";
+import sun from "../../static/sun.png";
+import Image from "next/image";
 
 const Theme = () => {
   const [mounted, setMounted] = useState(false);
@@ -7,12 +10,12 @@ const Theme = () => {
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div>
       <button
-        className="px-6 py-2 mt-6 bg-black dark:bg-white text-white dark:text-black"
+        className="px-2 w-12 bg-black dark:bg-white text-white dark:text-black"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
-        Toggle to {theme === "light" ? "dark" : "light"}
+        <Image className="" src={theme === "light" ? moon : sun} />
       </button>
     </div>
   );
