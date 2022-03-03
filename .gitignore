@@ -34,3 +34,6 @@
 
 # vercel
 /client/.vercel
+
+#vscode
+.vscode
