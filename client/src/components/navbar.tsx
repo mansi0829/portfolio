@@ -4,8 +4,8 @@ import Theme from "./theme";
 
 const Navbar = () => {
   return (
-    <div className="antialiased bg-gray-200 opacity-50 dark:opacity-80">
-      <header className="lg:fixed lg:w-full lg:px-16 px-6 bg-black dark:bg-white flex flex-wrap items-center lg:py-0 py-2">
+    <div className=" bg-gray-200 opacity-50 dark:opacity-80">
+      <header className="lg:px-16 px-6 bg-black dark:bg-white flex flex-wrap items-center lg:py-0 py-2">
         <div className="flex-1 flex justify-between items-center text-white dark:text-black">
           <Link href="/">Home </Link>
         </div>

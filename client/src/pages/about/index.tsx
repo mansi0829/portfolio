@@ -7,7 +7,7 @@ import { FaCode } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <h2 className="py-10 text-center text-4xl">Skills</h2>
+      <h2 className="py-4 text-center text-4xl">Skills</h2>
       <div className="p-2 flex flex-wrap justifiy-center items-center">
         <a className="w-52 text-gray-500 hover:text-gray-100 px-8">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

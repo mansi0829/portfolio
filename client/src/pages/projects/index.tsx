@@ -5,8 +5,10 @@ import office from "../../../static/office.png";
 const Projects = () => {
   return (
     <div>
-      <h2 className="pt-24 py-8 px-10 text-4xl flex  justify-center items-center">Projects</h2>
-      <div className="lg:flex justify-between px-8">
+      <h2 className="pt-24 py-8 px-12 text-4xl flex  justify-center items-center">
+        Projects
+      </h2>
+      <div className="lg:flex justify-between px-16">
         <div className="lg:mx-2 flex flex-col flex-wrap items-center">
           <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
             <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
@@ -68,12 +70,21 @@ const Projects = () => {
                     Node Js
                   </span>
                 </div>
-                <div className="mt-12 flex items-center">
+
+                <div className="mt-2 flex items-center">
                   <Image
                     className="w-16 h-16 bg-cover  border-2 border-gray-700"
                     alt=""
                     src={office}
                   ></Image>
+                </div>
+                <div className="flex justify-center item-center">
+                  <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                    Visit
+                  </button>
+                  <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                    Github
+                  </button>
                 </div>
               </div>
             </div>
@@ -141,12 +152,20 @@ const Projects = () => {
                     Tailwind CSS
                   </span>
                 </div>
-                <div className="mt-12 flex items-center">
+                <div className="mt-2 flex items-center">
                   <Image
                     className="w-16 h-16 bg-cover  border-2 border-gray-700"
                     alt="office"
                     src={office}
                   ></Image>
+                </div>
+                <div className="flex justify-center item-center">
+                  <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                    Visit
+                  </button>
+                  <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                    Github
+                  </button>
                 </div>
               </div>
             </div>
@@ -214,12 +233,20 @@ const Projects = () => {
                     Node Js
                   </span>
                 </div>
-                <div className="mt-12 flex items-center">
+                <div className="mt-2 flex items-center">
                   <Image
                     className="w-16 h-16 bg-cover  border-2 border-gray-700"
                     alt=""
                     src={office}
                   ></Image>
+                </div>
+                <div className="flex justify-center item-center">
+                  <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                    Visit
+                  </button>
+                  <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                    Github
+                  </button>
                 </div>
               </div>
             </div>

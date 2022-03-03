@@ -3,7 +3,10 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="py-8">
+    <div className=" py-8">
+      <h2 className="pt-24 py-8 px-12 text-4xl flex  justify-center items-center">
+        Blogs
+      </h2>
       <div className="flex justify-center items-center">
         <div className="max-w-3xl p-4 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-md  shadow-cyan-700/50">
           <div className="mb-2">

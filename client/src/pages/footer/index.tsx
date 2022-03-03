@@ -101,7 +101,12 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <p className="mt-8 text-base leading-6 text-center text-gray-400">
+        <center>
+          <button className="mx-auto md:mx-0 text-xl py-3 px-2 text-red-50 font-semibold rounded bg-blue-500 hover:bg-blue-400">
+            Resume
+          </button>
+        </center>
+        <p className="mt-2 text-base leading-6 text-center text-gray-400">
           &copy; {new Date().getFullYear()} Made with ♡ by Mansi. All rights
           reserved.
         </p>
