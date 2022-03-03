@@ -4,10 +4,10 @@ import Theme from "./theme";
 
 const Navbar = () => {
   return (
-    <div className="antialiased bg-gray-200">
-      <header className="lg:px-16 px-6 bg-black dark:bg-white flex flex-wrap items-center lg:py-0 py-2">
+    <div className="antialiased bg-gray-200 opacity-50 dark:opacity-80">
+      <header className="lg:fixed lg:w-full lg:px-16 px-6 bg-black dark:bg-white flex flex-wrap items-center lg:py-0 py-2">
         <div className="flex-1 flex justify-between items-center text-white dark:text-black">
-          <a href="#">Home </a>
+          <Link href="/">Home </Link>
         </div>
         <label htmlFor="menu-toggle" className="pointer-cursor lg:hidden block">
           <svg
@@ -26,7 +26,6 @@ const Navbar = () => {
           className="hidden lg:flex lg:items-center lg:w-auto w-full"
           id="menu"
         >
-            
           <nav>
             <ul className="lg:flex items-center justify-between text-base text-white dark:text-gray-700 pt-4 lg:pt-0">
               <li>
@@ -41,7 +40,7 @@ const Navbar = () => {
               </li>
               <li>
                 <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">
-                  <Link href="/blogs">Blogs</Link>
+                  <Link href="/blogs/allblogs">Blogs</Link>
                 </div>
               </li>
               <li>
