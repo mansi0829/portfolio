@@ -36,4 +36,4 @@
 /client/.vercel
 
 #vscode
-.vscode
+/.vscode
