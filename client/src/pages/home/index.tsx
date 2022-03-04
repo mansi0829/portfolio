@@ -25,10 +25,9 @@ const Home = () => {
           perspiciatis quis obcaecati, modi quidem magni dolores temporibus
           minus autem <br />
           <button className="mt-4 text-xl py-3 px-2 text-red-50 font-semibold rounded bg-blue-500 hover:bg-blue-400">
-          Resume
-        </button>
+            Resume
+          </button>
         </p>
-        
       </div>
     </div>
   );

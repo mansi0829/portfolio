@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <div className="container">
+      <div className="flex justify-center item-center mt-24">
         <div className="card">
           <h1 className="title text-gray-800 dark:text-gray-100">
             Contact Me!
@@ -43,7 +43,6 @@ const Contact = () => {
             Submit
           </button>
         </div>
-        <div className="blob"></div>
       </div>
     </div>
   );
