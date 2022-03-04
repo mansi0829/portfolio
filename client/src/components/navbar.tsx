@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <div className=" bg-gray-200 opacity-50 dark:opacity-80">
       <header className="lg:px-16 px-6 bg-black dark:bg-white flex flex-wrap items-center lg:py-0 py-2">
-        <div className="flex-1 flex justify-between items-center text-white dark:text-black">
-          <Link href="/">Home </Link>
+        <div className="name font-extrabold text-2xl flex-1 flex justify-between items-center text-white dark:text-black">
+          <Link href="/">Mansi here :) </Link>
         </div>
         <label htmlFor="menu-toggle" className="pointer-cursor lg:hidden block">
           <svg
@@ -30,7 +30,7 @@ const Navbar = () => {
             <ul className="lg:flex items-center justify-between text-base text-white dark:text-gray-700 pt-4 lg:pt-0">
               <li>
                 <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">
-                  <Link href="/about">About</Link>
+                  <Link href="/">Home</Link>
                 </div>
               </li>
               <li>
@@ -45,7 +45,7 @@ const Navbar = () => {
               </li>
               <li>
                 <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2">
-                  <Link href="#">Contact Me</Link>
+                  <Link href="/contact">Contact Me</Link>
                 </div>
               </li>
             </ul>
