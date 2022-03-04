@@ -20,13 +20,9 @@ const Home = () => {
           Software Engineer
         </p>
         <p className="text-xl text-gray-800 dark:text-gray-400 text-center md:text-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-          iste est, id quasi aspernatur aut natus eveniet commodi saepe nesciunt
-          perspiciatis quis obcaecati, modi quidem magni dolores temporibus
-          minus autem <br />
-          <button className="mt-4 text-xl py-3 px-2 text-red-50 font-semibold rounded bg-blue-500 hover:bg-blue-400">
-            Resume
-          </button>
+          An Enthusiatic Learner trying to expore Web Devlopment, Cloud and
+          DevOps. <br />
+          In my Free time I do same DSA and listen Music.
         </p>
       </div>
     </div>

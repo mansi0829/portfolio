@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const Allblogs = () => {
+export const Allblog = () => {
   return (
     <div>
       <div
@@ -11,17 +11,15 @@ export const Allblogs = () => {
         <div className="max-w-screen-xl mx-auto">
           <div className="xl:flex">
             <div>
-              <h3 className="leading-none font-black text-3xl">
-                Popular Posts
-              </h3>
+              <h3 className="leading-none font-black text-3xl">Tech Posts</h3>
               <div className="flex flex-col items-center lg:flex-row lg:items-stretch lg:justify-around">
-                <Link href="/blogs/blogtemplate">
+                <Link href="/blog/blogtemplate">
                   <div className="flex w-full max-w-sm mt-6 lg:mt-8 xl:mr-8">
                     <div className="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg bg-gray-100 dark:bg-gray-800 relative">
                       <div className="w-full h-48 bg-cover rounded-t-lg"></div>
                       <div className="p-6">
                         <div className="text-lg font-bold">
-                          Tips for creating an amazing design system
+                          Difference Between Javascript and Typescript
                         </div>
                         <div className="mt-2 text-gray-900 dark:text-gray-400 text-sm">
                           Learn how to create a new design system that is
@@ -33,13 +31,13 @@ export const Allblogs = () => {
                   </div>
                 </Link>
 
-                <Link href="/blogs/blogtemplate">
+                <Link href="/blog/blogtemplate">
                   <div className="flex w-full max-w-sm mt-6 lg:mt-8 xl:mr-8">
                     <div className="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg bg-gray-100 dark:bg-gray-800 relative">
                       <div className="w-full h-48 bg-cover rounded-t-lg"></div>
                       <div className="p-6">
                         <div className="text-lg font-bold">
-                          Using a drawing tablet to create beautiful icons
+                          UI For Your Web App
                         </div>
                         <div className="mt-2 text-gray-900 dark:text-gray-400 text-sm">
                           Good Icons are hard to come by. This article guides
@@ -56,7 +54,7 @@ export const Allblogs = () => {
             <div className="mt-12 xl:mt-0 xl:ml-8">
               <h3 className="leading-none font-black text-3xl">Recent Posts</h3>
               <div className="flex flex-col items-center lg:flex-row lg:items-stretch lg:justify-around xl:flex-col">
-                <Link href="/blogs/blogtemplate">
+                <Link href="/blog/blogtemplate">
                   <div className="flex w-full max-w-sm mt-6 lg:mt-8">
                     <div
                       className="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg
@@ -78,7 +76,7 @@ export const Allblogs = () => {
                   </div>
                 </Link>
 
-                <Link href="/blogs/blogtemplate">
+                <Link href="/blog/blogtemplate">
                   <div className="flex w-full max-w-sm mt-6 lg:mt-8">
                     <div
                       className="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg
@@ -102,9 +100,51 @@ export const Allblogs = () => {
             </div>
           </div>
         </div>
+        <div className="px-10 py-8">
+          <div className="xl:flex">
+            <div>
+              <h3 className="leading-none font-black text-3xl">
+                Non Tech Posts
+              </h3>
+              <div className="flex flex-col items-center lg:flex-row lg:items-stretch lg:justify-around">
+                <Link href="/blog/blogtemplate">
+                  <div className="flex w-full max-w-sm mt-6 lg:mt-8 xl:mr-8">
+                    <div className="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg bg-gray-100 dark:bg-gray-800 relative">
+                      <div className="w-full h-48 bg-cover rounded-t-lg"></div>
+                      <div className="p-6">
+                        <div className="text-lg font-bold">Virat Kohli</div>
+                        <div className="mt-2 text-gray-900 dark:text-gray-400 text-sm">
+                          Learn how to create a new design system that is
+                          beautiful and efficient for creating your UI
+                          components.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link href="/blog/blogtemplate">
+                  <div className="flex w-full max-w-sm mt-6 lg:mt-8 xl:mr-8">
+                    <div className="transition-all duration-300 cursor-pointer w-full shadow-lg hover:shadow-xl rounded-lg bg-gray-100 dark:bg-gray-800 relative">
+                      <div className="w-full h-48 bg-cover rounded-t-lg"></div>
+                      <div className="p-6">
+                        <div className="text-lg font-bold">Russia Ukraine</div>
+                        <div className="mt-2 text-gray-900 dark:text-gray-400 text-sm">
+                          Good Icons are hard to come by. This article guides
+                          you on how to create beautiful sketched icons using a
+                          drawing pad.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Allblogs;
+export default Allblog;

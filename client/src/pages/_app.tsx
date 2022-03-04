@@ -25,8 +25,6 @@ function MyApp({ Component, pageProps }) {
           <li></li>
           <li></li>
           <li></li>
-          <li></li>
-          <li></li>
         </ul>
       </div>
     </ThemeProvider>
