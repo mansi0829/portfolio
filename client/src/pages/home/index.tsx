@@ -24,7 +24,7 @@ const Home = () => {
           <p className="text-xl text-gray-800 dark:text-gray-400 text-center md:text-left">
             An Enthusiatic Learner trying to expore Web Devlopment, Cloud and
             DevOps. <br />
-            In my Free time I do same DSA and listen Music.
+            In my free time I do some DSA and listen music.
           </p>
         </div>
       </div>

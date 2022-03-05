@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className=" bg-gray-200 opacity-50 dark:opacity-80">
       <header className="lg:px-16 px-6 bg-black dark:bg-white flex flex-wrap items-center lg:py-0 py-2">
         <div className="name font-extrabold text-2xl flex-1 flex justify-between items-center text-white dark:text-black">
-          <Link href="/">Mansi here :) </Link>
+          <Link href="/">Mansi here : </Link>
         </div>
         <label htmlFor="menu-toggle" className="pointer-cursor lg:hidden block">
           <svg
