@@ -19,6 +19,6 @@ app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("hello mansi here!");
 });
 app.listen(5000);
