@@ -1,7 +1,8 @@
 let express = require("express");
 let connection = require("./db/connection");
 const dotenv = require("dotenv");
-const authRouter = require("./routes/auth");
+const authRoute = require("./routes/auth");
+const userRoute = require("./routes/users");
 let app = express();
 
 dotenv.config();
@@ -9,7 +10,8 @@ app.use(express.json());
 
 connection();
 
-app.use("/api/auth", authRouter);
+app.use("/api/auth", authRoute);
+app.use("/api/users", userRoute);
 
 app.get("/", (req, res) => {
   res.send("hello world");
