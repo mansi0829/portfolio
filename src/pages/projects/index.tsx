@@ -15,7 +15,7 @@ const Projects = () => {
           <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
             <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
               <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
-                PCSB-Coding Platform
+                Coding Platform
               </div>
               <div>
                 <div className="flex justify-between mt-6 text-xs font-bold">

@@ -26,12 +26,13 @@ const Home = () => {
             Sophomore at <a className="text-cyan-600 hover:text-cyan-800 dark:hover:text-cyan-400 " href="https://pict.edu/">Pune Institute of Computer Technology.</a><br />
             An Enthusiatic Learner trying to expore Web Devlopment, Cloud and
             DevOps. <br />
-            In my free time I do some DSA and listen music.
+            In my free time I do some DSA and listen music. <br />
+            <Experience />
           </p>
         </div>
       </div>
-      <Experience />
-      <div className="py-8">
+      
+      <div className="mb-8">
         <div className="flex justify-center items-center">
           <div className="max-w-3xl p-4 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-md  shadow-cyan-700/50">
             <div className="mb-2">
@@ -42,9 +43,9 @@ const Home = () => {
               <div className="h-3 text-3xl text-right text-indigo-600">”</div>
               <div className="text-center">
                 <div className="py-3">
-                  <Link href={"/blog"}>
+                  <Link href={"/contact"}>
                     <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
-                      here!
+                      Connect!
                     </button>
                   </Link>
                 </div>

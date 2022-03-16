@@ -5,17 +5,12 @@ import logo2 from '../../../static/logo2.png'
 
 const Experience = () => {
   return (
-    <div>
-      <h1 className="flex justify-center item-center text-3xl pt-20">Experience: </h1>
-      <div className="flex justify-center item-center">
-        <div className="p-10 pt-16 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
+    <div className='pt-4'>
+      <div className='flex'>
+      <h1 className='pt-5 text-2xl'>Currently working at: </h1>
+        <div className="m-8 transform h-52  w-1/6  transition duration-500 hover:scale-125">
           <a href="https://fossee.in/semester-long-internship/2022">
             <Image src={logo2} />
-          </a>
-        </div>
-        <div className="p-10 pt-0 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
-          <a href="https://kodeitsolutions.com/">
-            <Image src={logo1} />
           </a>
         </div>
       </div>
