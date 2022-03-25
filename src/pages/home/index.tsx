@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import workinggirl from "../../../static/workinggirl.png";
 import Experience from "../experience";
+import Github from "../github";
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Github />
     </div>
   );
 };

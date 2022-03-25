@@ -7,11 +7,11 @@ import ctisss from "../../../static/ctisss.png";
 const Projects = () => {
   return (
     <div className="min-h-screen">
-      <h2 className="pt-24 py-8 px-12 text-4xl flex justify-center items-center">
+      <h2 className="pt-24 py-12 px-12 text-4xl flex justify-center items-center">
         Projects
       </h2>
       <div className="lg:flex justify-between px-16">
-        <div className="lg:mx-2 flex flex-col items-center">
+        <div className="lg:mx-2 flex flex-col items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300">
           <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
             <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
               <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
@@ -68,7 +68,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="lg:mx-2 flex flex-col items-center">
+        <div className="lg:mx-2 flex flex-col items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300">
           <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
             <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
               <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
@@ -125,7 +125,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="lg:mx-2 flex flex-col flex-wrap items-center">
+        <div className="lg:mx-2 flex flex-col flex-wrap items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300">
           <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
             <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
               <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
