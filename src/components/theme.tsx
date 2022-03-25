@@ -12,7 +12,7 @@ const Theme = () => {
   return (
     <div>
       <button
-        className="px-2 w-12 bg-black dark:bg-white text-white dark:text-black"
+        className="px-2 w-12  text-white dark:text-black"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
         <Image className="" src={theme === "light" ? moon : sun} />

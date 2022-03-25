@@ -27,11 +27,9 @@ const Home = () => {
             An Enthusiatic Learner trying to expore Web Devlopment, Cloud and
             DevOps. <br />
             In my free time I do some DSA and listen music. <br />
-            <Experience />
           </p>
         </div>
       </div>
-      
       <div className="mb-8">
         <div className="flex justify-center items-center">
           <div className="max-w-3xl p-4 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-md  shadow-cyan-700/50">
