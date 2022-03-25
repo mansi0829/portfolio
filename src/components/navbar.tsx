@@ -51,9 +51,9 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
-                <div className="lg:p-2  px-0 block border-b-2 border-transparent hover:border-indigo-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                <div className="lg:p-2  px-0 block border-b-2 border-transparent hover:border-indigo-400 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
                   <button className="bg-gray-700 text-white hover:dark:text-gray-200 p-3 px-5 rounded-md">
-                    <a href="https://github.com/soumyajit4419/Portfolio" target="blank" className="flex justify-center">
+                    <a href="https://github.com/mansi0829/Portfolio" target="blank" className="flex justify-center">
                       <CgGitFork style={{ fontSize: "1.0em" }} />{" "}
                       <AiFillStar style={{ fontSize: "1.0em" }} />
                     </a>

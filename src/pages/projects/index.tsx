@@ -6,8 +6,8 @@ import ctisss from "../../../static/ctisss.png";
 
 const Projects = () => {
   return (
-    <div>
-      <h2 className="pt-24 py-8 px-12 text-4xl flex  justify-center items-center">
+    <div className="min-h-screen">
+      <h2 className="pt-24 py-8 px-12 text-4xl flex justify-center items-center">
         Projects
       </h2>
       <div className="lg:flex justify-between px-16">
@@ -33,7 +33,7 @@ const Projects = () => {
                     <span className="ml-1 text-gray-500">Pune</span>
                   </div>
                 </div>
-                <div className="text-center flex flex-row justify-between flex-wrap justify-between items-center text-xs font-bold">
+                <div className="text-center flex flex-row  flex-wrap justify-between items-center text-xs font-bold">
                   <span className="w-11/12 mt-6 mx-1 p-1 rounded bg-yellow-200 text-yellow-600">
                     ReactJs, Redux, Tailwind CSS
                   </span>
@@ -46,16 +46,22 @@ const Projects = () => {
                   ></Image>
                 </div>
                 <div className="flex justify-center item-center">
-                  <Link href="https://github.com/PCSB-Web-Team/online-judge-client/">
-                    <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                  <a href="https://github.com/PCSB-Web-Team/online-judge-client/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">
+                    <button >
                       View
                     </button>
-                  </Link>
-                  {/* <Link href="https://github.com/PCSB-Web-Team/online-judge-client/">
-                    <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                  </a>
+                  <a href="https://github.com/PCSB-Web-Team/online-judge-client/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">
+                    <button >
                       Github
                     </button>
-                  </Link> */}
+                  </a>
                 </div>
               </div>
             </div>
@@ -85,7 +91,7 @@ const Projects = () => {
                   </div>
 
                 </div>
-                <div className="text-center flex flex-row justify-between flex-wrap justify-between items-center text-xs font-bold">
+                <div className="text-center flex flex-row flex-wrap justify-between items-center text-xs font-bold">
                   <span className="w-11/12 mt-6 mx-1 p-1 rounded bg-purple-200 text-purple-600">
                     NextJs, TypeScript, NodeJs, MongoDb
                   </span>
@@ -95,23 +101,30 @@ const Projects = () => {
                     className="w-16 h-16 bg-cover  border-2 border-gray-700"
                     alt=""
                     src={office}
-                  ></Image>
+                  />
                 </div>
                 <div className="flex justify-center item-center">
-                  <Link href="https://github.com/mansi0829/my-website">
-                    <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                  <a href="/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">
+                    <button >
                       View
                     </button>
-                  </Link>
-                  {/* <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
-                    Github
-                  </button> */}
+                  </a>
+                  <a href="https://github.com/mansi0829/portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">
+                    <button>
+                      Github
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <div className="lg:mx-2 flex flex-col flex-wrap items-center">
           <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
             <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
@@ -133,10 +146,8 @@ const Projects = () => {
                     </svg>
                     <span className="ml-1 text-gray-500">Pune</span>
                   </div>
-
-
                 </div>
-                <div className="text-center flex flex-row justify-between flex-wrap justify-between items-center text-xs font-bold">
+                <div className="text-center flex flex-row flex-wrap justify-between items-center text-xs font-bold">
                   <span className="w-11/12 mt-6 mx-1 p-1 rounded bg-green-200 text-green-600">
                     HTML, CSS and JavaScript.
                   </span>
@@ -147,17 +158,25 @@ const Projects = () => {
                     className="w-16 h-16 bg-cover  border-2 border-gray-700"
                     alt=""
                     src={ctisss}
-                  ></Image>
+                  />
                 </div>
                 <div className="flex justify-center item-center">
-                  <Link href='https://india.hosting.acm.org/CTiS/'>
-                    <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
+                  <a href="https://india.hosting.acm.org/CTiS/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">
+                    <button >
                       View
                     </button>
-                  </Link>
-                  {/* <button className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400  text-blue-100">
-                    Github
-                  </button> */}
+                  </a>
+                  <a href="https://india.hosting.acm.org/CTiS/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">
+                    <button >
+                      Github
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
