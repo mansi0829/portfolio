@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import workinggirl from "../../../static/workinggirl.png";
+import workinggirl from "../../../public/static/workinggirl.png";
 import Experience from "../experience";
 import Github from "../github";
 

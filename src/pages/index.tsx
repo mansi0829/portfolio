@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Home from "./home";
 
 const index = () => {
@@ -6,8 +6,6 @@ const index = () => {
   return (
     <div>
       <Home />
-      <svg className="animate-bounce w-6 h-6">
-      </svg>
     </div>
   );
 };

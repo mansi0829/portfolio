@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import {
   AiFillGithub,
@@ -9,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-300 dark:bg-gray-700 opacity-90 text-2xl overflow-hidden">
+    <div className="bg-gray-300 dark:bg-gray-700 opacity-90 overflow-hidden py-2">
       <div className="flex flex-wrap -mx-2 ">
         <div className="w-full md:w-1/2 lg:w-1/4 px-2">
           <div className="h-12 text-sm text-grey-dark flex items-center justify-center">
@@ -26,7 +25,7 @@ const Footer = () => {
           <div className="h-12 text-sm text-grey-dark flex items-center justify-center">
             <div className="flex justify-center space-x-6">
               <ul className="flex justify-center px-8">
-                <li className="p-1 px-2">
+                <li className="p-1 px-2 text-2xl hover:text-gray-400">
                   <a
                     href="https://github.com/mansi0829"
                     target="_blank"
@@ -35,7 +34,7 @@ const Footer = () => {
                     <AiFillGithub />
                   </a>
                 </li>
-                <li className="p-1 px-2">
+                <li className="p-1 px-2 text-2xl hover:text-gray-400">
                   <a
                     href="https://twitter.com/mansi_gundre"
                     target="_blank"
@@ -44,16 +43,16 @@ const Footer = () => {
                     <AiOutlineTwitter />
                   </a>
                 </li>
-                <li className="p-1 px-2">
+                <li className="p-1 px-2 text-2xl hover:text-gray-400">
                   <a
-                    href="https://www.linkedin.com/in/soumyajit4419/"
+                    href="https://www.linkedin.com/in/mansi-gundre-a6a722207/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaLinkedinIn />
                   </a>
                 </li>
-                <li className="p-1 px-2">
+                <li className="p-1 px-2 text-2xl hover:text-gray-400">
                   <a
                     href="https://www.instagram.com/mansii.iii.__/"
                     target="_blank"

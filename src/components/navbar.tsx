@@ -9,9 +9,8 @@ import {
 
 const Navbar = () => {
 
-
   return (
-    <div className="fixed w-full bg-transparent opacity-50 dark:opacity-80 z-20 mt-3">
+    <div className="fixed sticky1 w-full bg-transparent opacity-50 dark:opacity-80 z-20 pt-2">
       <header className="lg:px-16 px-6 bg-transparent flex flex-wrap items-center lg:py-0 py-2">
         <div className="name font-extrabold text-2xl flex-1 flex justify-between items-center text-black dark:text-white">
           <Link href="/">Mansi here : </Link>
