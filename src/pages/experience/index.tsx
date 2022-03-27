@@ -1,14 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
-import logo1 from '../../../static/logo1.png'
-import logo2 from '../../../static/logo2.png'
+import logo1 from '../../../public/static/logo1.png'
+import logo2 from '../../../public/static/logo2.png'
 
 const Experience = () => {
   return (
-    <div className='pt-4'>
-      <div className='flex'>
-      <h1 className='pt-5 text-2xl'>Currently working at: </h1>
-        <div className="m-8 transform h-52  w-1/6  transition duration-500 hover:scale-125">
+    <div className='pt-4 hover:shadow-md'>
+      <h1 className='text-2xl flex justify-center p-1 pt-12'>
+        Currently Working at:
+      </h1>
+      <div className='flex justify-center'>
+        <div className="p-5 mb-24">
           <a href="https://fossee.in/semester-long-internship/2022">
             <Image src={logo2} />
           </a>

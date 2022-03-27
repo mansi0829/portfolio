@@ -3,8 +3,6 @@
   font-family: "Amatic SC", cursive;
 }
 
-/* loader */
-
 .sticky1 {
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;

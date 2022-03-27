@@ -6,10 +6,11 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "../components/navbar";
 import Footer from "./footer";
 import Head from "next/head";
+import Animation from "../components/animation";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider>
       <Head>
         <link rel="icon" href="logo.png" type="image/png" sizes="114x114" />
         <title>Mansi Gundre | Portfolio</title>
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <Component {...pageProps} />
       <Footer />
+      <Animation />
     </ThemeProvider>
   );
 }

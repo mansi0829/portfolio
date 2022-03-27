@@ -4,6 +4,7 @@ import React from "react";
 import workinggirl from "../../../public/static/workinggirl.png";
 import Experience from "../experience";
 import Github from "../github";
+import Type from "./typeAnimation";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
             Mansi Gundre
           </h1>
           <p className="text-2xl text-gray-600 dark:text-gray-300 text-center md:text-left font-bold mb-4">
-            Software Engineer
+            <Type />
           </p>
           <p className="text-xl text-gray-800 dark:text-gray-400 text-center md:text-left">
             Sophomore at <a className="text-cyan-600 hover:text-cyan-800 dark:hover:text-cyan-400 " href="https://pict.edu/">Pune Institute of Computer Technology.</a><br />
@@ -31,6 +32,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <Experience />
       <div className="mb-8">
         <div className="flex justify-center items-center">
           <div className="max-w-3xl p-4 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-md  shadow-cyan-700/50">
