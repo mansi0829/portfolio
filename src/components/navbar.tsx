@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Theme from "./theme";
 import { CgGitFork } from "react-icons/cg";
 import {
@@ -11,6 +11,8 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 const Navbar = () => {
+
+  const [navOpen, setNavOpen] = useState(false);
 
   return (
     <div className="fixed sticky1 w-full bg-transparent opacity-50 dark:opacity-80 z-20 pt-3">

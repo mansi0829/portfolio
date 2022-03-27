@@ -12,7 +12,7 @@ const Experience = () => {
       <div className='flex justify-center'>
         <div className="p-5 mb-24">
           <a href="https://fossee.in/semester-long-internship/2022">
-            <Image src={logo2} />
+            <Image src={logo2} alt="fossee"/>
           </a>
         </div>
       </div>

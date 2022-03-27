@@ -93,7 +93,7 @@ const Projects = () => {
                 </div>
                 <div className="text-center flex flex-row flex-wrap justify-between items-center text-xs font-bold">
                   <span className="w-11/12 mt-6 mx-1 p-1 rounded bg-purple-200 text-purple-600">
-                    NextJs, TypeScript, NodeJs, MongoDb
+                    NextJs, TypeScript 
                   </span>
                 </div>
                 <div className="mt-4 flex items-center">

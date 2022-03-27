@@ -10,10 +10,11 @@ const Footer = () => {
   return (
     <div className="opacity-90 overflow-hidden py-8">
       <div className=" w-full bg-transparent opacity-50 dark:opacity-80 z-20 pt-3">
-        <header className="lg:px-16 px-6 bg-transparent flex flex-wrap items-center lg:py-0 py-2">
+        <header className="lg:px-16 px-6 bg-transparent flex sm:flex-wrap items-center lg:py-0 py-2">
           <div className="text-xl flex-1 flex flex-wrap justify-between items-center text-black dark:text-white">
             <p>&copy; {new Date().getFullYear()} All rights
-              reserved.</p>
+              reserved.
+            </p>
           </div>
           <div>
             <ul className="flex justify-center  ">

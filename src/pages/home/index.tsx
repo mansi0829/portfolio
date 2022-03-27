@@ -44,9 +44,10 @@ const Home = () => {
               <div className="h-3 text-3xl text-right text-indigo-600">”</div>
               <div className="text-center">
                 <div className="py-3">
-                  <Link href={"/contact"}>
+                  {/* eslint-disable-next-line @next/next/link-passhref */}
+                  <Link href="/contact">
                     <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded">
-                      Connect!
+                      <a>Connect!</a>
                     </button>
                   </Link>
                 </div>
