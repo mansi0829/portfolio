@@ -14,7 +14,7 @@ const Contact = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(`${process.env.SERVICE_ID}`, `${process.env.TEMPLATE_ID}`, form.current, `${process.env.USER_ID}`)
+    emailjs.sendForm(`service_xsxqorv`, `template_edg1zfs`, form.current, `ZD0D0yTpc7hhtXKqD`)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
