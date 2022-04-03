@@ -1,23 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import workinggirl from "../../../public/static/workinggirl.png";
-import Experience from "../experience";
+import workinggirl from "../../static/workinggirl.png";
 import Github from "../github";
 import Type from "./typeAnimation";
 
 const Home = () => {
   return (
     <div>
-      <div className="container mx-auto md:mt-0 pt-20 md:space-x-10 md:grid grid-cols-3 justify-center md:pt-36 pb-28">
-        <div className="grid justify-center items-center  order-1 col-span-1">
-          <Image
-            className="lg:h-80 md:h-64 h-40 mt-0 rounded-full"
-            src={workinggirl}
-            alt=""
-          />
-        </div>
-        <div className="mt-8 md:mt-0 lg:justify-end col-span-2">
+      <div className="container mx-auto flex px-5 py-32 md:flex-row flex-col items-center mb-32">
+        <div className="px-8 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="text-4xl text-gray-800 dark:text-gray-50 text-center md:text-left font-bold mb-4">
             Mansi Gundre
           </h1>
@@ -31,8 +23,14 @@ const Home = () => {
             In my free time I do some DSA and listen music. <br />
           </p>
         </div>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <Image
+            className="lg:h-80 md:h-64 h-40 mt-0 rounded-full "
+            src={workinggirl}
+            alt=""
+          />
+        </div>
       </div>
-      <Experience />
       <div className="mb-8">
         <div className="flex justify-center items-center">
           <div className="max-w-3xl p-4 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-md  shadow-cyan-700/50">

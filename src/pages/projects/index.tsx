@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import office from "../../../public/static/office.png";
-import ctisss from "../../../public/static/ctisss.png";
+import office from "../../static/office.png";
+import ctisss from "../../static/ctisss.png";
 
 const Projects = () => {
   return (

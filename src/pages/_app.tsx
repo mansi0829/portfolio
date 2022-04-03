@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/globals.css";
 import "../styles/app.css";
 import { ThemeProvider } from "next-themes";
@@ -6,9 +6,17 @@ import Navbar from "../components/navbar";
 import Footer from "./footer";
 import Head from "next/head";
 import Animation from "../components/animation";
-import ScrollToTop from "react-scroll-to-top";
+import AOS from "aos";
 
+import "aos/dist/aos.css";
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
   return (
     <ThemeProvider>
       <Head>
@@ -20,7 +28,6 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <Component {...pageProps} />
       <Footer />
-      <ScrollToTop smooth color="blue" />
       <Animation />
     </ThemeProvider>
   );

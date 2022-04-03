@@ -52,6 +52,18 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
+                <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400 lg:mb-0 mb-2">
+                  <Link href="/aboutme">
+                    <a className="flex">
+                      <p className="p-1">
+                        <AiOutlineUser />
+                      </p>
+                      About Me
+                    </a>
+                  </Link>
+                </div>
+              </li>
+              <li>
                 <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400">
                   <Link href="/projects">
                     <a className="flex">
@@ -59,18 +71,6 @@ const Navbar = () => {
                         <AiOutlineFundProjectionScreen />
                       </p>
                       Projects
-                    </a>
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400">
-                  <Link href="/resume">
-                    <a className="flex">
-                      <p className="p-1">
-                        <CgFileDocument />
-                      </p>
-                      Resume
                     </a>
                   </Link>
                 </div>

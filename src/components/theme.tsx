@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import moon from "../../public/static/moon.png";
-import sun from "../../public/static/sun.png";
+import moon from "../static/moon.png";
+import sun from "../static/sun.png";
 import Image from "next/image";
 
 const Theme = () => {

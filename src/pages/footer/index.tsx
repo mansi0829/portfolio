@@ -27,7 +27,7 @@ const Footer = () => {
                   <AiFillGithub />
                 </a>
               </li>
-              <li className="p-1 px-2 text-2xl hover:text-indigo-500">
+              {/* <li className="p-1 px-2 text-2xl hover:text-indigo-500">
                 <a
                   href="https://twitter.com/mansi_gundre"
                   target="_blank"
@@ -35,8 +35,8 @@ const Footer = () => {
                 >
                   <AiOutlineTwitter />
                 </a>
-              </li>
-              <li className="p-1 px-2 text-2xl hover:text-cyan-400">
+              </li> */}
+              <li className="p-1 px-2 text-2xl hover:text-blue-400">
                 <a
                   href="https://www.linkedin.com/in/mansi-gundre-a6a722207/"
                   target="_blank"
