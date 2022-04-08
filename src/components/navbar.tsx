@@ -1,108 +1,86 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, ReactNode } from "react";
 import Theme from "./theme";
-import { CgGitFork } from "react-icons/cg";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
 
-const Navbar = () => {
+const Links = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "About",
+    path: "/aboutme",
+  },
+  {
+    name: "Projects",
+    path: "/projects/",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+];
 
-  const [navOpen, setNavOpen] = useState(false);
+const NavLink = ({ children, path }: { children: ReactNode; path: string }) => (
+  <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400">
+    <Link href={path}>{children}</Link>
+  </div>
+);
+
+const Navbar = (props) => {
+
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <div className="fixed sticky1 w-full bg-transparent opacity-50 dark:opacity-80 z-20 pt-3">
-      <header className="lg:px-16 px-6 bg-transparent flex flex-wrap items-center lg:py-0 py-2">
-        <div className="name font-extrabold text-2xl flex-1 flex justify-between items-center text-black dark:text-white">
-          <Link href="/">Mansi here : </Link>
-        </div>
-        <label htmlFor="menu-toggle" className="pointer-cursor lg:hidden block">
-          <svg
-            className="fill-current text-gray-900 dark:text-gray-100"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
+    <div >
+      <nav
+        className=" flex flex-wrap items-center justify-between px-5 py-3 ">
+        <div className=" w-full bg-transparent opacity-50 dark:opacity-80 z-20 px-4 mx-auto flex flex-wrap items-center  justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <div className="name font-extrabold text-3xl flex-1 flex justify-between items-center text-black dark:text-white">
+              <Link href="/">Mansi here : </Link>
+            </div>
+            <button
+              className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setNavbarOpen(!navbarOpen)}
+            >
+              <label htmlFor="menu-toggle" className="pointer-cursor lg:hidden block">
+                <svg
+                  className="fill-current text-gray-900 dark:text-gray-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <title>menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </label>
+            </button>
+          </div>
+          <div
+            className={
+              "lg:flex flex-grow items-center lg:bg-transparent lg:shadow-none" +
+              (navbarOpen ? " block rounded " : " hidden")
+            }
+            id="example-navbar-warning"
           >
-            <title>menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </label>
-        <input className="hidden" type="checkbox" id="menu-toggle" />
-        <div
-          className="hidden lg:flex lg:items-center lg:w-auto w-full"
-          id="menu"
-        >
-          <nav>
-            <ul className="lg:flex items-center justify-between text-base text-gray-900  dark:text-gray-300  pt-4 lg:pt-0">
-              <li>
-                <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400">
-                  <Link href="/">
-                    <a className="flex">
-                      <p className="p-1">
-                        <AiOutlineHome />
-                      </p>
-                      Home
-                    </a>
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400 lg:mb-0 mb-2">
-                  <Link href="/aboutme">
-                    <a className="flex">
-                      <p className="p-1">
-                        <AiOutlineUser />
-                      </p>
-                      About Me
-                    </a>
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400">
-                  <Link href="/projects">
-                    <a className="flex">
-                      <p className="p-1">
-                        <AiOutlineFundProjectionScreen />
-                      </p>
-                      Projects
-                    </a>
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <div className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:dark:text-cyan-400 hover:border-cyan-400 lg:mb-0 mb-2">
-                  <Link href="/contact">
-                    <a className="flex">
-                      <p className="p-1">
-                        <AiOutlineUser />
-                      </p>
-                      Contact Me
-                    </a>
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <div className="lg:p-2  px-0 block border-b-2 border-transparent  transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
-                  <button className="bg-gray-700 text-white hover:dark:text-cyan-400 p-3 px-5 rounded-md">
-                    <a href="https://github.com/mansi0829/Portfolio" target="blank" className="flex justify-center">
-                      <CgGitFork style={{ fontSize: "1.0em" }} />{" "}
-                      <AiFillStar style={{ fontSize: "1.0em" }} />
-                    </a>
-                  </button>
-                </div>
+            <ul className="list-none lg:ml-auto">
+              <li className="flex flex-col lg:flex-row">
+                {Links.map(({ name, path }) => (
+                  <NavLink key={path} path={path}>
+                    <a onClick={() => setNavbarOpen(!navbarOpen)}>{name}</a>
+                  </NavLink>
+                ))}
               </li>
             </ul>
-          </nav>
-        </div>
-        <Theme />
-      </header>
-    </div>
+            <Theme />
+          </div>
+        </div >
+      </nav >
+    </div >
+
   );
 };
 export default Navbar;
