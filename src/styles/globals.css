@@ -2,6 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-#menu-toggle:checked + #menu {
-  display: block;
+html {
+  --purple: #f5ebff;
+  --primary: #5851f9;
+  --text: #000;
+  --yellow: #f7df1e;
+  --blue: #2965f1;
+  --darkgray: #222831;
+  --beige: #eee;
+  --secondary: #f5ebff;
+  --lightpurple: #f0efff;
+}
+
+html.dark {
+  --primary: #b55400;
+  --text: var(--beige);
+  --secondary: var(--darkgray);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark progress[value]::-webkit-progress-value {
+  background-color: var(--primary);
+}
+
+nav ul li a.active:before,
+nav ul li a.active:after,
+nav ul li:hover a:before,
+nav ul li:hover a:after {
+  width: 100%;
+}
+
+@keyframes bounce {
+  50% {
+    top: -5px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
+
+li.css {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+li.nextjs,
+li.discuss {
+  background-color: #000;
+  color: #fff;
+}
+
+li.react {
+  background-color: #222222;
+  color: #61daf6;
+}
+
+li.javascript {
+  background-color: var(--yellow);
+  color: #000;
+}
+
+li.html {
+  background-color: #f53900;
+  color: white;
+}
+
+li.performance {
+  background-color: #ffa364;
+  color: #000;
+}
+
+li.showdev {
+  background-color: #091b47;
+  color: #b2ffe1;
+}
+
+li.gatsby {
+  background-color: #663399;
+  color: #fff;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--beige);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--primary);
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
 }

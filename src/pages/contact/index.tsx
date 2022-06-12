@@ -26,51 +26,34 @@ const Contact = () => {
 
 
   return (
-    <div className="min-h-screen">
-      <div className="flex justify-center item-center pt-32">
-        <div className="max-w-3xl p-4 px-8 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-md  shadow-cyan-700/50">
-          <h1 className="text-2xl text-gray-800 dark:text-gray-100 px-24 py-5">
-            Contact Me!
-          </h1>
-          <div className="py-4">
-            <form method="post" onSubmit={handleOnSubmit}>
-              <div className="py-2 text-xl text-gray-400">
-                <input
-                  className="appearance-none bg-transparent border-none shadow-lg hover:shadow-2xl w-full text-gray-700 dark:text-gray-200 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  type="text"
-                  name="from_name"
-                  placeholder="Name"
-                  aria-label="Full name"
-                />
-              </div>
-              <div className="py-2 text-xl text-gray-400">
-                <input
-                  className="appearance-none bg-transparent border-none shadow-lg hover:shadow-2xl w-full text-gray-700 dark:text-gray-200 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  aria-label="Email"
-                />
-              </div>
-              <div className="py-2 text-xl text-gray-400">
-                <textarea
-                  className="appearance-none bg-transparent border-none shadow-lg hover:shadow-2xl w-full text-gray-700 dark:text-gray-200 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  name="message"
-                  placeholder="Message"
-                  aria-label="Message"
-                />
-              </div>
-              <div className="px-3">
-                <button className="py-2 px-8 font-semibold bg-blue-500 hover:bg-blue-400 rounded-full">
-                  Submit
-                </button>
-                <div>
-                  {result ? <Result /> : null}
-                </div>
-              </div>
-            </form>
+    <div className="container px-5 py-24 mx-auto">
+      <div className="flex flex-col text-center w-full mb-12">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800 dark:text-gray-100">Contact Us</h1>
+        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Know more about me !!</p>
+      </div>
+      <div className="lg:w-1/2 md:w-2/3 mx-auto">
+        <div className="flex flex-wrap -m-2">
+          <div className="p-2 w-1/2">
+            <div className="relative">
+              <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
+              <input type="text" id="name" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            </div>
           </div>
-
+          <div className="p-2 w-1/2">
+            <div className="relative">
+              <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            </div>
+          </div>
+          <div className="p-2 w-full">
+            <div className="relative">
+              <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
+              <textarea id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+          <div className="p-2 w-full">
+            <button className="flex mx-auto text-white bg-blue-500 hover:bg-blue-400 border-0 py-2 px-8 focus:outline-none rounded text-lg">Button</button>
+          </div>
         </div>
       </div>
     </div>

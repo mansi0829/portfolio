@@ -1,13 +1,24 @@
-import React from "react";
-import Home from "./home";
+import React, { useEffect, useRef, useState } from 'react'
+import Head from 'next/head'
+import smoothscroll from 'smoothscroll-polyfill'
+import Home from './home'
 
-const index = () => {
+const HomePage = () => {
+
+  useEffect(() => {
+    smoothscroll.polyfill()
+  }, [])
 
   return (
-    <div>
+    <>
+      <Head>
+        <title>Mansi Gundre | Home</title>
+      </Head>
       <Home />
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default index;
+
+
+export default HomePage

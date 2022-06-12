@@ -12,8 +12,10 @@ const Theme = () => {
   return (
     <div>
       <button
-        className="px-2 w-12  text-white dark:text-black"
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+        aria-label="Toggle Dark Mode"
+        type="button"
+        className="p-3 h-12 w-12 order-2 md:order-3"
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         <Image className="" src={theme === "light" ? moon : sun} />
       </button>

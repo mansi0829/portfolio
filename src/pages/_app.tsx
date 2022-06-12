@@ -1,36 +1,19 @@
-import React, { useEffect } from "react";
-import "../styles/globals.css";
-import "../styles/app.css";
-import { ThemeProvider } from "next-themes";
-import Navbar from "../components/navbar";
-import Footer from "./footer";
-import Head from "next/head";
-import Animation from "../components/animation";
-import AOS from "aos";
+import '../styles/globals.css'
+import '../styles/app.css'
+import 'aos/dist/aos.css'
+import { ThemeProvider } from 'next-themes'
+import * as React from 'react'
+import Layout from '../components/Layout'
 
-import "aos/dist/aos.css";
-function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-    });
-  }, []);
+// This default export is required in a new `pages/_app.js` file.
+export default function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider>
-      <Head>
-        <link rel="icon" href="logo2.png" type="image/png" sizes="114x114" />
-        <title>Mansi Gundre | Portfolio</title>
-        <meta name="keywords" content="mansi gundre" />
-        <meta name="description" content="mansi gundre portfolio" />
-      </Head>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
-      <Animation />
-    </ThemeProvider>
-  );
+    <>
+      <ThemeProvider attribute="class">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </>
+  )
 }
-
-export default MyApp;
