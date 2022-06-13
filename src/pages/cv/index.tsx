@@ -18,12 +18,15 @@ const cv = () => {
                   Java
                 </span><span className="w-6/12 mt-6 mx-1 p-1 rounded bg-yellow-200 text-yellow-600">
                   Spring Boot
-                </span><span className="w-6/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600">
-                  Spring MVC
                 </span>
-                <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-violet-200 text-violet-600">
-                  MySQL
-                </span>
+                <div className='py-4'>
+                  <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600">
+                    Spring MVC
+                  </span>
+                  <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-violet-200 text-violet-600">
+                    MySQL
+                  </span>
+                </div>
               </div>
             </li>
             <li className="step shadow-3xl">
