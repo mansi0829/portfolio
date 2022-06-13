@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
 import Github from '../github';
@@ -5,7 +6,10 @@ import Resume from '../resume';
 
 const AboutMe = () => {
     return (
-        <div id='#aboutme'>
+        <div>
+            <Head>
+                <title>Mansi Gundre | Aboutme</title>
+            </Head>
             <div className="py-12 m-8">
                 <div className="flex justify-center items-center">
                     <div className="max-w-3xl p-4 text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 rounded-lg shadow-md  shadow-cyan-700/50">
