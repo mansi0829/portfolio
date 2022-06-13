@@ -21,7 +21,7 @@ const AboutMe = () => {
                                 An enthusiastic person who likes to explore different technology.
                             </p>
                             <p className="text-xl px-4 text-center text-gray-600 dark:text-gray-400">
-                                Having Purpose, Being surrounded by Hope, Belief in Logic.
+                                Purpose | Hope | Logic
                             </p>
                         </div>
                     </div>
