@@ -18,11 +18,9 @@ const AboutMe = () => {
                                 Hi, I am <h1 className='text-3xl'> <span className='font-bold'>Mansi</span> Gundre</h1>
                             </p>
                             <p className="text-xl px-4 py-3 text-center text-gray-600 dark:text-gray-400">
-                                An enthusiastic person who likes to explore different technology.
+                                I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who tries to be fair in everything I do.
                             </p>
-                            <p className="text-xl px-4 text-center text-gray-600 dark:text-gray-400">
-                                Purpose | Hope | Logic
-                            </p>
+
                         </div>
                     </div>
                 </div>

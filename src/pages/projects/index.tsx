@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import home from "../../static/home.png";
 import ojplatform from "../../static/ojplatform.png";
-import ctisss from "../../static/ctisss.png";
+import blogapp from "../../static/blogapp.png";
 import Head from "next/head";
 
 const Projects = () => {
@@ -133,7 +133,7 @@ const Projects = () => {
             <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
               <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
                 <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
-                  CTiS Website
+                  Blog Application
                 </div>
                 <div>
                   <div className="flex justify-between mt-6 text-xs font-bold">
@@ -153,7 +153,7 @@ const Projects = () => {
                   </div>
                   <div className="text-center flex flex-row flex-wrap justify-between items-center text-xs font-bold">
                     <span className="w-11/12 mt-6 mx-1 p-1 rounded bg-green-200 text-green-600">
-                      HTML, CSS and JavaScript.
+                      Django, HTML, CSS, JavaScript.
                     </span>
                   </div>
 
@@ -161,11 +161,11 @@ const Projects = () => {
                     <Image
                       className="w-16 h-16 bg-cover  border-2 border-gray-700"
                       alt=""
-                      src={ctisss}
+                      src={blogapp}
                     />
                   </div>
                   <div className="flex justify-center item-center">
-                    <a href="https://india.hosting.acm.org/CTiS/"
+                    <a href=""
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">
@@ -173,7 +173,7 @@ const Projects = () => {
                         View
                       </button>
                     </a>
-                    <a href="https://india.hosting.acm.org/CTiS/"
+                    <a href="https://github.com/mansi0829/blog"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-5/12 mt-6 mx-1 p-1 rounded bg-blue-500 hover:bg-blue-400 text-center text-blue-100">

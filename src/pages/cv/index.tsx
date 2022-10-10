@@ -14,9 +14,10 @@ const cv = () => {
               <li className="step shadow-3xl ">
                 <span>22</span>
                 <div className="content">
-                  <h3 className='text-xl font-bold'>Fossee Summer Fellow<div className='text-sm font-light font-semibold'>March 2022 - Present</div> </h3>
+                  <h3 className='text-xl font-bold'>Fossee Summer Fellow<div className='text-sm font-light font-semibold'>March 2022 - August 2022</div> </h3>
                   <p className='py-2'>
                     Worked on Email Validation System.
+                    Worked on Full text search feature.
                   </p>
                   <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-red-200 text-red-600">
                     Java

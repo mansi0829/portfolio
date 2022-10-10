@@ -18,8 +18,7 @@ const Home = () => {
           </p>
           <p className="text-xl text-gray-800 dark:text-gray-400 text-center md:text-left">
             Sophomore at <a className="text-cyan-600 hover:text-cyan-800 dark:hover:text-cyan-400 " href="https://pict.edu/">Pune Institute of Computer Technology.</a><br />
-            An Enthusiatic Learner trying to expore Web Devlopment, Cloud and
-            Blockchain. <br />
+            The best thing about Boolean is that even if you are wrong, you are only off by a bit. <br />
             In my free time  I do some DSA and listen music. <br />
           </p>
         </div>

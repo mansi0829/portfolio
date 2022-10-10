@@ -92,7 +92,7 @@ const NavBar = () => {
         <ul className="hidden md:flex md:gap-6">{renderNavBarItems()}</ul>
         <ul
           ref={NavBarMobileRef}
-          className={`md:hidden absolute flex flex-col w-full top-16 left-0 py-3 items-center text-white bg-primary transform translate-x-full gap-2 ${isMounted.current ? 'transition-transform' : ''
+          className={`md:hidden absolute flex flex-col w-full top-16 left-0 py-3 items-center text-white bg-black opacity-90 transform translate-x-full gap-2 ${isMounted.current ? 'transition-transform' : ''
             }`}
         >
           {renderNavBarItems()}
