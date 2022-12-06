@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Mansi Gundre | Home</title>
+        <title>Mansi | Home</title>
       </Head>
       <Home />
     </>
