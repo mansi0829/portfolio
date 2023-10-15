@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
@@ -6,6 +6,7 @@ import useWindowSize from '../hooks/useWindowSize'
 import useIsMounted from '../hooks/useIsMounted'
 
 const NavBar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const NavBarMobileRef = useRef(null)
   const mobileIconRef = useRef(null)
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
@@ -30,7 +31,21 @@ const NavBar = () => {
       toggleMobileNavBar()
     }
   }
-
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
   const renderNavBarItems = () => {
     const linkClasses =
       'relative before:absolute before:bottom-[-5px] before:h-[5px] before:w-[0] before:mt-[5px] before:bg-black dark:before:bg-white before:transition-all before:duration-300'
@@ -84,7 +99,7 @@ const NavBar = () => {
   )
 
   return (
-    <nav className="fixed bg-purple dark:bg-darkgrey text-text h-16 w-full z-50">
+    <nav className={`fixed bg-grey-500 dark:bg-darkgrey text-text h-16 w-full z-50 md:bg-transparent md:dark:bg-transparent ${isScrolled ? 'bg-blur' : ''}`}>
       <div className="flex h-full container mx-auto justify-between items-center px-6 md:px-5">
         <div className="name font-extrabold text-3xl text-black dark:text-white">
           <Link href="/">Mansi here : </Link>

@@ -105,3 +105,19 @@ progress[value]::-webkit-progress-value {
     transform: scale(1.2);
   }
 }
+
+
+@media (max-width: 768px) {
+  .nav-item {
+    padding: 12px 20px; /* Adjust the padding as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    text-align: center;
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    width: 100%; /* Set your desired width */
+    left: 0; /* Position the menu at the left edge */
+  }
+  .nav-item:hover {
+    background-color: #555; /* Set your desired hover background color */
+  }
+}

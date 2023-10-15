@@ -4,7 +4,7 @@ import Animation from './animation'
 import Head from 'next/head'
 const Layout = ({ children }) => {
   return (
-    <div className='min-h-screen'>
+    <div>
       <Head>
         <link rel="icon" href="logo2.png" type="image/png" sizes="114x114" />
         <meta name="keywords" content="mansi gundre" />

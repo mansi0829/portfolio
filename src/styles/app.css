@@ -118,3 +118,7 @@
     transform: translateX(-50%);
   }
 }
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+}

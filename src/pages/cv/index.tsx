@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
+import Card from '../../components/card'
+
 
 const cv = () => {
   return (
@@ -10,69 +12,39 @@ const cv = () => {
       <div className="timer-section">
         <div className="container">
           <div className="timer-container">
-            <ul className="timer">
-              <li className="step shadow-3xl ">
-                <span>22</span>
-                <div className="content">
-                  <h3 className='text-xl font-bold'>Fossee Summer Fellow<div className='text-sm font-light font-semibold'>March 2022 - August 2022</div> </h3>
-                  <p className='py-2'>
-                    Worked on Email Validation System.
-                    Worked on Full text search feature.
-                  </p>
-                  <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-red-200 text-red-600">
-                    Java
-                  </span><span className="w-6/12 mt-6 mx-1 p-1 rounded bg-yellow-200 text-yellow-600">
-                    Spring Boot
-                  </span>
-                  <div className='py-4'>
-                    <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600">
-                      Spring MVC
-                    </span>
-                    <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-violet-200 text-violet-600">
-                      MySQL
-                    </span>
-                  </div>
-                </div>
-              </li>
-              <li className="step shadow-3xl">
-                <span>22</span>
-                <div className="content">
-                  <h3 className='text-xl font-bold'>Microsoft Engage 2022<div className='text-sm font-light font-semibold'>May 2022 - June 2022</div></h3>
-                  <p className='py-2'>
-                    Worked on Face Rcognition Web based application for attendance management system using openCV.
-                  </p>
-                  <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-yellow-200 text-yellow-600 ">
-                    ReactJs
-                  </span><span className="w-6/12 mt-6 mx-1 p-1 rounded bg-red-200 text-red-600">
-                    Python
-                  </span><span className="w-6/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600">
-                    OpenCV
-                  </span>
-                  <div className='py-2'></div>
-                  <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-green-200 text-green-600">
-                    Face Recognition
-                  </span>
-                  <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-indigo-200 text-indigo-600">
-                    MySQL
-                  </span>
-                </div>
-              </li>
-              <li className="step shadow-3xl">
-                <span>21</span>
-                <div className="content">
-                  <h3 className='text-xl font-bold'>Kode It Solutions<div className='text-sm font-light '>August 2021 - December 2021</div></h3>
-                  <p className='py-2'>
-                    Worked on Inhouse Project using react, firebase, material ui.
-                  </p>
-                  <span className="w-6/12 mt-6 mx-1 p-1 rounded bg-blue-200 text-blue-600 ">
-                    ReactJs
-                  </span><span className="w-6/12 mt-6 mx-1 p-1 rounded bg-yellow-200 text-yellow-600">
-                    FireBase
-                  </span><span className="w-6/12 mt-6 mx-1 p-1 rounded bg-red-200 text-red-600">
-                    Material Ui
-                  </span>
-                </div>
-              </li>
+            <ul className="timer justify-center">
+              <Card
+                number="23"
+                title="BA3 Intern"
+                subtitle="Barclays"
+                duration="June 2023 - August 2023"
+                description="Created Shell Scripts for autosys and Worked on implemeting tracing for server logs."
+                skills={['Shell Script', 'Java', 'Java Swing', 'OpenTracing', 'MySQL', 'Kibana']}
+              />
+              <Card
+                number="22"
+                title="Fossee Summer Fellow"
+                subtitle="IIT Bombay"
+                duration="April 2022 - August 2022"
+                description="Worked on Email Validation System and implemented Full text search feature."
+                skills={['Java', 'Spring Boot', 'Spring MVC', 'MySQL', 'Testing']}
+              />
+              <Card
+                number="22"
+                title="Microsoft Engage 2022"
+                subtitle="Microsoft"
+                duration="May 2022 - June 2022"
+                description="Worked on Face Recognition Web-based application for attendance management system using OpenCV."
+                skills={['ReactJs', 'Python', 'OpenCV', 'Face Recognition', 'MySQL']}
+              />
+              <Card
+                number="22"
+                title="Web Development Intern"
+                subtitle="Kode It Solutions"
+                duration="August 2021 - December 2021"
+                description="Worked on Inhouse Project using react, firebase, material ui."
+                skills={['ReactJs', 'FireBase', 'Material UI']}
+              />
             </ul>
           </div>
         </div>

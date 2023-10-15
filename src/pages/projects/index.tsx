@@ -1,22 +1,31 @@
 import Image from "next/image";
-import React from "react";
+import React, {useEffect} from "react";
 import home from "../../static/home.png";
 import ojplatform from "../../static/ojplatform.png";
 import blogapp from "../../static/blogapp.png";
 import Head from "next/head";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <Head>
         <title>Mansi Gundre | Projects</title>
       </Head>
-      <div className="min-h-screen z-100">
-        <h2 className="pt-24 py-12 px-12 text-4xl flex justify-center items-center">
+      <div className=" z-100">
+        <h2 className="pt-15 py-12 px-12 text-4xl flex justify-center items-center">
           Projects
         </h2>
         <div className="lg:flex justify-between px-16">
-          <div className="lg:mx-2 flex flex-col items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300">
+          {/* project 1 */}
+          <div className="lg:mx-2 flex flex-col items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300"  data-aos="fade-up" data-aos-delay="0">
             <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
               <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
                 <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
@@ -73,7 +82,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="lg:mx-2 flex flex-col items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300">
+          <div className="lg:mx-2 flex flex-col items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300"  data-aos="fade-up" data-aos-delay="300">
             <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
               <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
                 <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
@@ -129,7 +138,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="lg:mx-2 flex flex-col flex-wrap items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300">
+          <div className="lg:mx-2 flex flex-col flex-wrap items-center transition ease-in-out delay-150 hover:-translate-y-8 duration-300"  data-aos="fade-up" data-aos-delay="600">
             <div className="flex-1 flex w-full max-w-sm pt-16 lg:pt-0">
               <div className="w-full p-8 sm:p-12 lg:px-8 xl:px-12 shadow-lg rounded bg-gray-100 dark:bg-gray-800 shadow-cyan-700/50 relative">
                 <div className="text-lg font-bold text-gray-700 dark:text-gray-300 leading-tight">
