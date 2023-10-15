@@ -121,3 +121,7 @@ progress[value]::-webkit-progress-value {
     background-color: #555; /* Set your desired hover background color */
   }
 }
+
+button[type="submit"] {
+  z-index: 999; /* Set a higher z-index value */
+}
