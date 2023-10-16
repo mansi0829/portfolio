@@ -3,6 +3,7 @@ import React from "react";
 import workinggirl from "../../static/workinggirl.png";
 import Github from "../github";
 import Type from "./typeAnimation";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -16,10 +17,13 @@ const Home = () => {
             <Type />
           </p>
           <p className="text-xl text-gray-800 dark:text-gray-400 text-center md:text-left">
-            Sophomore at <a className="text-cyan-600 hover:text-cyan-800 dark:hover:text-cyan-400 " href="https://pict.edu/">Pune Institute of Computer Technology.</a><br />
+            Final Year Grad at <a className="text-cyan-600 hover:text-cyan-800 dark:hover:text-cyan-400 " href="https://pict.edu/">Pune Institute of Computer Technology.</a><br />
             The best thing about Boolean is that even if you are wrong, you are only off by a bit. <br />
-            In my free time  I do some DSA and listen music. <br />
+            I like exploring music and uncovering patterns in algorithms. <br />
           </p>
+          <Link href={{ pathname: '/contact' }}><button className="mt-6 text-white bg-blue-500 hover:bg-blue-400 border-0 py-2 px-8 focus:outline-none rounded text-lg" style={{ position: "relative", zIndex: 5 }}>
+            {`Let's Connect!`}
+          </button></Link>
         </div>
         <div className="lg:max-w-lg  md:w-1/2 w-5/6">
           <Image

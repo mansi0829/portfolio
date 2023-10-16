@@ -39,20 +39,20 @@ const NavBar = () => {
         setIsScrolled(false);
       }
     };
-  
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); 
+  }, []);
   const renderNavBarItems = () => {
     const linkClasses =
       'relative before:absolute before:bottom-[-5px] before:h-[5px] before:w-[0] before:mt-[5px] before:bg-black dark:before:bg-white before:transition-all before:duration-300'
     return (
       <>
         <li>
-          <Link href={{ pathname: '/', hash: 'home' }}>
+          <Link href={{ pathname: '/' }}>
             <a className={linkClasses} onClick={linkClicked}>
               Home
             </a>
