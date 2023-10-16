@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
 import Github from '../github';
-import Resume from '../resume';
 
 const AboutMe = () => {
     return (
